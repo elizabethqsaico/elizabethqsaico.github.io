@@ -4,12 +4,15 @@
 a, a:hover {
   text-decoration: none; }
 
+img {
+  max-width: 50%; }
+
 header, .content, footer {
   font-family: "Special Elite", cursive; }
 
 .content {
   position: absolute;
-  top: 25%;
+  top: 0;
   left: 25%;
   right: 25%; }
 
