@@ -1,0 +1,34 @@
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.3); }
+
+a, a:hover {
+  text-decoration: none; }
+
+header, .content, footer {
+  font-family: "Special Elite", cursive; }
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%; }
+
+.ff-menu {
+  position: fixed;
+  bottom: 10%;
+  left: 0;
+  right: 0; }
+
+.p-fr {
+  position: fixed;
+  right: 1rem;
+  top: 1rem; }
+
+.p-fl {
+  position: fixed;
+  left: 1rem;
+  top: 1rem; }
+
+.redes i {
+  font-size: 30px;
+  margin-bottom: 10px; }
