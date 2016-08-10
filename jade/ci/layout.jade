@@ -3,9 +3,26 @@ html(lang='es-PE')
 	body
 		include header.jade
 		block content-default
-			.container
-				.content.text-center
-					h1 ELIZABETH
-					h3 < CODER CREATIVA PERSEVERANTE >
-					block content
+			.container 
+				#index.active.section.text-center
+					.index-contenido
+						svg(viewbox='0 0 1320 300')
+							// Symbol
+							symbol#s-text
+								text(text-anchor='middle', x='50%', y='50%', dy='.35em')
+									| ELIZABETH
+							// Duplicate symbols
+							use.text(xlink:href='#s-text')
+							use.text(xlink:href='#s-text')
+							use.text(xlink:href='#s-text')
+							use.text(xlink:href='#s-text')
+							use.text(xlink:href='#s-text')
+						p 
+							span#cod < 
+							| CODER CREATIVA PERSEVERANTE
+							span#cod >
+				include aboutme.jade
+				include skills.jade
+				include portfolio.jade
+				include contact.jade
 		include footer.jade

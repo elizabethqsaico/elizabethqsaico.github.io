@@ -1,13 +1,127 @@
-*{ 	outline:1px solid rgba(255,0,0,0.3); }
-$ff-menu: "Special Elite", cursive;
-$fs-icon: 30px;
+//*{ outline:1px solid rgba(255,0,0,0.3); }
+$ff-titulo: 'Open Sans', sans-serif;
+$ff-parrafo: 'Comfortaa', cursive;
+$color-a: #F2385A;//rosado
+$color-b: #F5A503;//amarillo
+$color-c: #3AA1BF;//azul
+$color-d: #E9F1DF;//blanco
+$color-e: #56D9CD;//celeste 
+h1,h2,h3,h4,h5{margin:0; padding: 0;}
 a, a:hover{text-decoration: none;}
+
+#index{ 
+	p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; text-transform: uppercase;
+    span{color: $color-b;}
+  }
+  .index-contenido{position: absolute; top:30%; left:10%; right:50%; font: 14.5em/1 Open Sans, Impact;}
+}
+
+#aboutme{ 
+  h1{color: $color-b; font-family: $ff-titulo; margin-bottom: 5%;}
+  p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
+    span{color: $color-b;}
+  }
+  .about{margin-top: 5%;}
+  .aboutme-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1);
+    p{color:$color-c; font-size: 18px; letter-spacing: 1.5;}
+  }
+  .aboutme-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
+}
 .contact{max-width:50%;}
-header,.content,footer{ font-family: $ff-menu;}
-.content{position:absolute; top:0; left:25%; right:25%;}
-.ff-menu{position:fixed; bottom:10%; left:0; right:0;}
+header,.content,footer{ font-family: $ff-titulo;}
+.d-n{display:none;}
+.d-a{display:auto;}
+//.content{position:absolute; top:0; left:25%; right:25%;}
 .p-fr{position: fixed; right: 1rem; top: 1rem;}
 .p-fl{position: fixed; left: 1rem; top: 1rem; }
+
+//portfolio
+.portfolio{ position:absolute; top:-5%; left:5%; right:5%;}
+//.portfolio{ margin-bottom: 20%; height: 500px;}
+
+
 .redes{
-	i{font-size: $fs-icon; margin-bottom: 10px;}
-} 
+  i{font-size: 30px; margin-bottom: 10px; color: $color-e;}
+}
+//footer-menu
+#menu{position:fixed; bottom:5%; left:10%; right:10%; z-index: 1000;
+  .menu-item{  
+    a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 20px; font-family: $ff-titulo; transition: all 0.5s;}
+    a:hover, a.active{color: $color-c;}
+  }
+}
+//
+#contacto{background: url("../img/contact.jpg"); background-size: cover;}
+//
+.section
+{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+//INDEX NAME
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: $color-b;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: $color-e;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: $color-b;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: $color-e;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: $color-b;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+html, body {
+  height: 100%;
+}
+
+body {
+  background-size: .2em 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/fondo.png"); background-size: cover;
+}
