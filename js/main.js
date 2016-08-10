@@ -2,7 +2,7 @@ $(document).ready(initPage);
 
 function initPage(){
 	$("#menu a").click(changeView);
-	$("#redes-menu a").click(changeView);
+	$("#menu-redes a").click(changeView);
 	TweenMax.to("#index",1,{autoAlpha:1});
 }
 function changeView(){
