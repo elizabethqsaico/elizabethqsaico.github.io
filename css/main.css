@@ -62,17 +62,8 @@ a, a:hover {
   right: 10%;
   font: 14.5em/1 Open Sans, Impact; }
 
-.contact {
-  max-width: 50%; }
-
-header, .content, footer {
+header, footer {
   font-family: "Open Sans", sans-serif; }
-
-.d-n {
-  display: none; }
-
-.d-a {
-  display: auto; }
 
 .p-fr {
   position: fixed;
@@ -110,10 +101,6 @@ header, .content, footer {
     transition: all 0.5s; }
   #menu .menu-item a:hover, #menu .menu-item a.active {
     color: #3AA1BF; }
-
-#contacto {
-  background: url("../img/contact.jpg");
-  background-size: cover; }
 
 .section {
   position: fixed;

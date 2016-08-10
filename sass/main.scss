@@ -30,10 +30,7 @@ a, a:hover{text-decoration: none;}
   h3{color: $color-b; font-family: $ff-titulo; }
   .skills-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
 }
-.contact{max-width:50%;}
-header,.content,footer{ font-family: $ff-titulo;}
-.d-n{display:none;}
-.d-a{display:auto;}
+header,footer{ font-family: $ff-titulo;}
 //.content{position:absolute; top:0; left:25%; right:25%;}
 .p-fr{position: fixed; right: 1rem; top: 1rem;}
 .p-fl{position: fixed; left: 1rem; top: 1rem; }
@@ -54,7 +51,6 @@ header,.content,footer{ font-family: $ff-titulo;}
   }
 }
 //
-#contacto{background: url("../img/contact.jpg"); background-size: cover;}
 //
 .section
 {
