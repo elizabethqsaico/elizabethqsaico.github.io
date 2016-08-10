@@ -51,6 +51,17 @@ a, a:hover {
   right: 10%;
   font: 14.5em/1 Open Sans, Impact; }
 
+#skills h3 {
+  color: #F5A503;
+  font-family: "Open Sans", sans-serif; }
+
+#skills .skills-contenido {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  font: 14.5em/1 Open Sans, Impact; }
+
 .contact {
   max-width: 50%; }
 

@@ -15,7 +15,6 @@ a, a:hover{text-decoration: none;}
   }
   .index-contenido{position: absolute; top:30%; left:10%; right:50%; font: 14.5em/1 Open Sans, Impact;}
 }
-
 #aboutme{ 
   h1{color: $color-b; font-family: $ff-titulo; margin-bottom: 5%;}
   p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
@@ -26,6 +25,10 @@ a, a:hover{text-decoration: none;}
     p{color:$color-c; font-size: 18px; letter-spacing: 1.5;}
   }
   .aboutme-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
+}
+#skills{
+  h3{color: $color-b; font-family: $ff-titulo; }
+  .skills-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
 }
 .contact{max-width:50%;}
 header,.content,footer{ font-family: $ff-titulo;}
