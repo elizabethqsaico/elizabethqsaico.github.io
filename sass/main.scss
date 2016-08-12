@@ -11,9 +11,6 @@ h1,h2,h3,h4,h5{margin:0; padding: 0;}
 a, a:hover{text-decoration: none;}
 header,footer{ font-family: $ff-titulo;}
 
-.p-fr{position: fixed; right: 1rem; bottom: 5%;}
-.p-fl{position: fixed; left: 1rem; bottom: 5%;}
-
 #index{ 
 	p{margin-left: 15%; font-family: $ff-parrafo; color: $color-e; font-size: 20px; text-transform: uppercase;
     span{color: $color-b;}
@@ -66,9 +63,10 @@ header,footer{ font-family: $ff-titulo;}
 .portfolio{ position:absolute; top:-5%; left:5%; right:5%;}
 //.portfolio{ margin-bottom: 20%; height: 500px;}
 
-
 .redes{
-  i{font-size: 30px; margin-bottom: 10px; color: $color-e;}
+  i{font-size: 30px; color: $color-e;}
+  .p-fr{position: fixed; right: 5%; bottom: 5%;}
+  .p-fl{position: fixed; left: 5%; bottom: 5%;}
 }
 //footer-menu
 #menu{position:fixed; bottom:5%; left:10%; right:10%; z-index: 1000;

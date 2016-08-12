@@ -9,16 +9,6 @@ a, a:hover {
 header, footer {
   font-family: "Open Sans", sans-serif; }
 
-.p-fr {
-  position: fixed;
-  right: 1rem;
-  bottom: 5%; }
-
-.p-fl {
-  position: fixed;
-  left: 1rem;
-  bottom: 5%; }
-
 #index p {
   margin-left: 15%;
   font-family: "Comfortaa", cursive;
@@ -134,8 +124,17 @@ header, footer {
 
 .redes i {
   font-size: 30px;
-  margin-bottom: 10px;
   color: #56D9CD; }
+
+.redes .p-fr {
+  position: fixed;
+  right: 5%;
+  bottom: 5%; }
+
+.redes .p-fl {
+  position: fixed;
+  left: 5%;
+  bottom: 5%; }
 
 #menu {
   position: fixed;
