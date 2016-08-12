@@ -6,7 +6,21 @@ h1, h2, h3, h4, h5 {
 a, a:hover {
   text-decoration: none; }
 
+header, footer {
+  font-family: "Open Sans", sans-serif; }
+
+.p-fr {
+  position: fixed;
+  right: 1rem;
+  top: 1rem; }
+
+.p-fl {
+  position: fixed;
+  left: 1rem;
+  top: 1rem; }
+
 #index p {
+  margin-left: 15%;
   font-family: "Comfortaa", cursive;
   color: #56D9CD;
   font-size: 20px;
@@ -17,14 +31,13 @@ a, a:hover {
 #index .index-contenido {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 0;
   right: 50%;
   font: 14.5em/1 Open Sans, Impact; }
 
 #aboutme h1 {
   color: #F5A503;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 5%; }
+  font-family: "Open Sans", sans-serif; }
 
 #aboutme p {
   font-family: "Comfortaa", cursive;
@@ -52,28 +65,66 @@ a, a:hover {
   font: 14.5em/1 Open Sans, Impact; }
 
 #skills h3 {
-  color: #F5A503;
-  font-family: "Open Sans", sans-serif; }
+  color: #3AA1BF;
+  font-family: "Open Sans", sans-serif;
+  text-align: center; }
 
 #skills .skills-contenido {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 50%; }
+  #skills .skills-contenido .icon {
+    background: rgba(235, 238, 237, 0.1);
+    border-radius: 5%;
+    padding: 2%;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    margin-top: 5%; }
+    #skills .skills-contenido .icon .list-web {
+      margin-left: 10%; }
+      #skills .skills-contenido .icon .list-web img {
+        margin-top: 15%;
+        margin-left: 8%; }
+      #skills .skills-contenido .icon .list-web .web-item {
+        display: inline;
+        margin-top: 10%;
+        margin-left: 5%; }
+    #skills .skills-contenido .icon .list-desktop img {
+      margin-top: 10%; }
+
+#contact .contact-contenido {
   position: absolute;
   top: 30%;
   left: 10%;
   right: 10%;
   font: 14.5em/1 Open Sans, Impact; }
 
-header, footer {
+#contact h1 {
+  color: #F5A503;
   font-family: "Open Sans", sans-serif; }
 
-.p-fr {
-  position: fixed;
-  right: 1rem;
-  top: 1rem; }
+#contact p {
+  font-family: "Comfortaa", cursive;
+  color: #56D9CD;
+  font-size: 20px; }
+  #contact p span {
+    color: #F5A503; }
 
-.p-fl {
-  position: fixed;
-  left: 1rem;
-  top: 1rem; }
+#contact .contact-item {
+  padding: 5% 8%;
+  background: rgba(235, 238, 237, 0.1); }
+  #contact .contact-item h3 {
+    color: #3AA1BF;
+    font-family: "Open Sans", sans-serif; }
+  #contact .contact-item a {
+    color: #56D9CD; }
+    #contact .contact-item a span {
+      margin-right: 10px;
+      font-size: 40px; }
+  #contact .contact-item a:hover {
+    color: #3AA1BF; }
 
 .portfolio {
   position: absolute;
@@ -96,7 +147,7 @@ header, footer {
     color: #F5A503;
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 20px;
+    font-size: 26px;
     font-family: "Open Sans", sans-serif;
     transition: all 0.5s; }
   #menu .menu-item a:hover, #menu .menu-item a.active {
@@ -156,7 +207,6 @@ html, body {
   height: 100%; }
 
 body {
-  background-size: .2em 100%;
   margin: 0;
   padding: 0;
   background: url("../img/fondo.png");

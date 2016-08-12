@@ -6,17 +6,22 @@ $color-b: #F5A503;//amarillo
 $color-c: #3AA1BF;//azul
 $color-d: #E9F1DF;//blanco
 $color-e: #56D9CD;//celeste 
+
 h1,h2,h3,h4,h5{margin:0; padding: 0;}
 a, a:hover{text-decoration: none;}
+header,footer{ font-family: $ff-titulo;}
+
+.p-fr{position: fixed; right: 1rem; top: 1rem;}
+.p-fl{position: fixed; left: 1rem; top: 1rem; }
 
 #index{ 
-	p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; text-transform: uppercase;
+	p{margin-left: 15%; font-family: $ff-parrafo; color: $color-e; font-size: 20px; text-transform: uppercase;
     span{color: $color-b;}
   }
-  .index-contenido{position: absolute; top:30%; left:10%; right:50%; font: 14.5em/1 Open Sans, Impact;}
+  .index-contenido{position: absolute; top:30%; left:0; right:50%; font: 14.5em/1 Open Sans, Impact;}
 }
 #aboutme{ 
-  h1{color: $color-b; font-family: $ff-titulo; margin-bottom: 5%;}
+  h1{color: $color-b; font-family: $ff-titulo;}
   p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
     span{color: $color-b;}
   }
@@ -27,14 +32,36 @@ a, a:hover{text-decoration: none;}
   .aboutme-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
 }
 #skills{
-  h3{color: $color-b; font-family: $ff-titulo; }
-  .skills-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
+  h3{color: $color-c; font-family: $ff-titulo; text-align: center;}
+  .skills-contenido{position: absolute; top:30%; left:0; right:50%;
+  .icon{
+    background: rgba(235, 238, 237, 0.1); border-radius: 5%; padding:2%; margin:0; padding:0; height:300px;
+    margin-top: 5%;
+    .list-web{
+        margin-left: 10%;
+        img{margin-top: 15%; margin-left: 8%;}
+        .web-item{ display:inline; margin-top:10%; margin-left:5%;}
+      } 
+    .list-desktop{
+        img{margin-top: 10%;}
+      }
+    }
+  }
 }
-header,footer{ font-family: $ff-titulo;}
-//.content{position:absolute; top:0; left:25%; right:25%;}
-.p-fr{position: fixed; right: 1rem; top: 1rem;}
-.p-fl{position: fixed; left: 1rem; top: 1rem; }
-
+#contact{
+  .contact-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
+  h1{color: $color-b; font-family: $ff-titulo; }
+  p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
+    span{color: $color-b;}
+  }
+  .contact-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1);
+    h3{color: $color-c; font-family: $ff-titulo;}
+    a{color: $color-e; 
+      span{margin-right: 10px; font-size: 40px; }
+    }
+    a:hover{color: $color-c; }
+  }
+}
 //portfolio
 .portfolio{ position:absolute; top:-5%; left:5%; right:5%;}
 //.portfolio{ margin-bottom: 20%; height: 500px;}
@@ -46,11 +73,10 @@ header,footer{ font-family: $ff-titulo;}
 //footer-menu
 #menu{position:fixed; bottom:5%; left:10%; right:10%; z-index: 1000;
   .menu-item{  
-    a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 20px; font-family: $ff-titulo; transition: all 0.5s;}
+    a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 26px; font-family: $ff-titulo; transition: all 0.5s;}
     a:hover, a.active{color: $color-c;}
   }
 }
-//
 //
 .section
 {
@@ -112,6 +138,7 @@ header,footer{ font-family: $ff-titulo;}
   }
 }
 
+
 /* Other styles */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 html, body {
@@ -119,7 +146,6 @@ html, body {
 }
 
 body {
-  background-size: .2em 100%;
   margin: 0;
   padding: 0;
   background: url("../img/fondo.png"); background-size: cover;
