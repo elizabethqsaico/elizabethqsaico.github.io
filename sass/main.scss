@@ -11,8 +11,8 @@ h1,h2,h3,h4,h5{margin:0; padding: 0;}
 a, a:hover{text-decoration: none;}
 header,footer{ font-family: $ff-titulo;}
 
-.p-fr{position: fixed; right: 1rem; top: 1rem;}
-.p-fl{position: fixed; left: 1rem; top: 1rem; }
+.p-fr{position: fixed; right: 1rem; bottom: 5%;}
+.p-fl{position: fixed; left: 1rem; bottom: 5%;}
 
 #index{ 
 	p{margin-left: 15%; font-family: $ff-parrafo; color: $color-e; font-size: 20px; text-transform: uppercase;
