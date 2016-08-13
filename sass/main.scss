@@ -140,7 +140,6 @@ header,footer{ font-family: $ff-titulo;}
   }
 }
 
-
 /* Other styles */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 html, body {
@@ -154,19 +153,15 @@ body {
 }
 
 @media(max-width:400px){
+  body{background: url("../img/fondo.png"); background-size: cover;}
   .redes{
     i{font-size: 23px; color: $color-e;}
     .p-fr{position: fixed; right: 5%; bottom: 20%;}
   }
-  #index{
-      .index-contenido{position: absolute; right:0; left:0;
-      { #svg{margin-left:30px;
-        #s-text{text-align:center; margin-left: 15px;}
-        p{font-size:16px; margin-left: 30px;}
-       }
-      }
-    }
-  } 
+  #index .index-contenido{position: absolute; right:0; left:0;}
+  #index .index-contenido #svg{margin-left:30px;}
+  #index .index-contenido #s-text{text-align:center; margin-left: 15px;}
+  #index .index-contenido p{font-size:16px; margin-left: 30px;}
   #menu{position:fixed; z-index: 1000; bottom:20%;
     .menu-item{  
       a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 16px; font-family: $ff-titulo; transition: all 0.5s;}
