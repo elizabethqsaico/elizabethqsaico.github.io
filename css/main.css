@@ -405,7 +405,8 @@ body {
   #skills .skills-contenido h3 {
     font-size: 14px; }
   #skills .skills-contenido ul li img {
-    max-width: 30%; }
+    max-width: 40%;
+    max-height: 50%; }
   #contact h1 {
     color: #F5A503;
     font-family: "Open Sans", sans-serif; }
