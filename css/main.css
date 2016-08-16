@@ -146,9 +146,14 @@ header, footer {
 
 #portfolio .portfolio-contenido {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
-  font: 14.5em/1 Open Sans, Impact; }
+  right: 50%;
+  background: rgba(235, 238, 237, 0.1);
+  border-radius: 2%; }
+
+#portfolio .portfolio-item {
+  padding: 5%; }
 
 .portfolio {
   position: absolute;
@@ -253,7 +258,8 @@ header, footer {
   position: relative;
   text-align: center;
   cursor: default;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-radius: 2%; }
 
 .hovereffect .overlay {
   position: absolute;
@@ -294,7 +300,9 @@ header, footer {
   position: relative;
   font-size: 17px;
   background-color: transparent;
-  color: #FFF;
+  color: #E9F1DF;
+  font-size: "Comfortaa", cursive;
+  font-weight: bold;
   padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -304,7 +312,7 @@ header, footer {
   transform: translate3d(0, -100%, 0); }
 
 .hovereffect a, hovereffect p {
-  color: #FFF;
+  color: #E9F1DF;
   padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);

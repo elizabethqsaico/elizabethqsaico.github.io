@@ -84,8 +84,8 @@ header,footer{ font-family: $ff-titulo;}
   }
 }
 #portfolio{
-  .portfolio-contenido{position: absolute; top:25%; left:0; font: 14.5em/1 Open Sans, Impact;}
-
+  .portfolio-contenido{position: absolute; top:20%; left:0; right:50%; background: rgba(235, 238, 237, 0.1); border-radius: 2%;}
+  .portfolio-item{padding: 5%;}
 }
 //portfolio
 .portfolio{ position:absolute; top:-5%; left:5%; right:5%;}
@@ -176,6 +176,7 @@ header,footer{ font-family: $ff-titulo;}
   text-align: center;
   cursor: default;
   margin-bottom: 50px;
+  border-radius: 2%;
 }
 
 .hovereffect .overlay {
@@ -221,7 +222,9 @@ header,footer{ font-family: $ff-titulo;}
   position: relative;
   font-size: 17px;
   background-color: transparent;
-  color: #FFF;
+  color: $color-d;
+  font-size: $ff-parrafo;
+  font-weight: bold;
   padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -232,7 +235,7 @@ header,footer{ font-family: $ff-titulo;}
 }
 
 .hovereffect a, hovereffect p {
-  color: #FFF;
+  color: $color-d;
   padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
