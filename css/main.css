@@ -112,6 +112,11 @@ header, footer {
     #skills .skills-contenido .icon .list-desktop img {
       margin-top: 10%; }
 
+#skills ul li img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
 #contact .contact-contenido {
   position: absolute;
   top: 30%;
