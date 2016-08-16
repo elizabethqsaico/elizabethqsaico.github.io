@@ -204,6 +204,7 @@ header,footer{ font-family: $ff-titulo;}
 }
 
 .hovereffect img {
+  border-radius: 2%;
   display: block;
   position: relative;
   -webkit-transition: all 0.35s;
@@ -216,7 +217,7 @@ header,footer{ font-family: $ff-titulo;}
   -webkit-filter: brightness(0.6);
 }
 
-.hovereffect h2 {
+.hovereffect h3 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -245,7 +246,7 @@ header,footer{ font-family: $ff-titulo;}
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h3 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
@@ -277,7 +278,7 @@ body {
     p{color:$color-c; font-size: 14px; letter-spacing: 1.2;}
   }
   .aboutme p{font-size: 12px;}
-  .aboutme-contenido{position: absolute; top:20%; left:0; right:8%; font: 14.5em/1 Open Sans, Impact;}
+  .aboutme-contenido{position: absolute; top:10%; left:0; right:8%; font: 14.5em/1 Open Sans, Impact;}
   }
   .redes{
     i{font-size: 23px; color: $color-e;}
@@ -293,7 +294,7 @@ body {
       a:hover, a.active{color: $color-c;}
     }
   }
-  #skills .skills-contenido{position: absolute; top:10%; left:0; right:8%;}
+ #skills .skills-contenido{position: absolute; top:2%; left:0; right:8%;}
  #skills .skills-contenido h3{font-size: 14px;}
   #skills .skills-contenido ul li img{max-width: 40%;}
   #contact{ 
