@@ -6,6 +6,7 @@ $color-b: #F5A503;//amarillo
 $color-c: #3AA1BF;//azul
 $color-d: #E9F1DF;//blanco
 $color-e: #56D9CD;//celeste 
+$color-f: #BDBDBD;//plomo
 
 h1,h2,h3,h4,h5{margin:0; padding: 0;}
 a, a:hover{text-decoration: none;}
@@ -23,8 +24,8 @@ header,footer{ font-family: $ff-titulo;}
     span{color: $color-b;}
   }
   .about{margin-top: 5%;}
-  .aboutme-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1);
-    p{color:$color-c; font-size: 18px; letter-spacing: 1.5;}
+  .aboutme-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1); border-radius:2%;
+    p{color:$color-f; font-size: 18px; letter-spacing: 1.5;}
   }
   .aboutme-contenido{position: absolute; top:30%; left:10%; right:15%; font: 14.5em/1 Open Sans, Impact;}
 }
@@ -52,15 +53,15 @@ header,footer{ font-family: $ff-titulo;}
   }
 }*/
 #skills{
-  h3{color: $color-c; font-family: $ff-titulo; text-align: center;}
+  h3{color: $color-c; font-family: $ff-titulo; margin-bottom:2%;}
+  p{color: $color-f; font-family: $ff-parrafo; text-align: center; font-weight:bold; padding-top:10%; margin-bottom:0;}
   hr{border: 1px solid $color-c; margin-top:1%; margin-bottom: 2%;}
   .skills-contenido{position: absolute; top:25%; left:0; right:50%;
   .icon{
-    background: rgba(235, 238, 237, 0.1); border-radius: 5%; padding:2%; margin:0; padding:0; height:300px;
-    margin-top: 5%;
+    background: rgba(235, 238, 237, 0.1); border-radius: 5%; padding:2%; margin:0; padding:0; height:300px; border-radius:2%;
     .list-web{
         margin-left: 10%;
-        img{margin-top: 15%; margin-left: 8%;}
+        img{margin-top: 15%; margin-left: 5%; margin-right:5%;}
         .web-item{ display:inline; margin-top:10%; margin-left:5%;}
       } 
     .list-desktop{
@@ -71,17 +72,17 @@ header,footer{ font-family: $ff-titulo;}
    ul li img:hover{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);}
 }
 #contact{
-  .contact-contenido{position: absolute; top:30%; left:10%; right:10%; font: 14.5em/1 Open Sans, Impact;}
+  .contact-contenido{position: absolute; top:30%; left:10%; right:15%; font: 14.5em/1 Open Sans, Impact;}
   h1{color: $color-b; font-family: $ff-titulo; }
   p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
     span{color: $color-b;}
   }
-  .contact-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1);
-    h3{color: $color-c; font-family: $ff-titulo;}
-    a{color: $color-e; 
-      span{margin-right: 10px; font-size: 40px; }
+  .contact-item{padding:5% 8%; background: rgba(235, 238, 237, 0.1); border-radius:2%;
+    h3{color: $color-f; font-family: $ff-titulo;}
+    a{color: $color-f; 
+      span{margin-right: 10px; font-size: 35px; color:$color-f;}
     }
-    a:hover{color: $color-c; }
+    a:hover{color: $color-f; }
   }
 }
 #portfolio{
@@ -99,8 +100,9 @@ header,footer{ font-family: $ff-titulo;}
 }
 //footer-menu
 #menu{position:fixed; bottom:5%; left:10%; right:10%; z-index: 1000;
-  .menu-item{  
-    a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 26px; font-family: $ff-titulo; transition: all 0.5s;}
+  .menu-item{
+    li{margin-left: 2%; margin-right:2%;}  
+    a{color: $color-b; font-size: 26px; font-family: $ff-titulo; transition: all 0.5s;}
     a:hover, a.active{color: $color-c;}
   }
 }
@@ -268,18 +270,18 @@ body {
   background: url("../img/fondo.png"); background-size: cover;
 }
 
-@media(max-width:400px){
+@media(max-width:500px){
   body{background: url("../img/fondo.png"); background-size: cover;}
   #aboutme{ 
-  h1{color: $color-b; font-family: $ff-titulo;}
-  p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
-    span{color: $color-b;}
-  }
-  .aboutme-item{ background: rgba(235, 238, 237, 0.1);
-    p{color:$color-c; font-size: 14px; letter-spacing: 1.2;}
-  }
-  .aboutme p{font-size: 12px;}
-  .aboutme-contenido{position: absolute; top:10%; left:0; right:8%; font: 14.5em/1 Open Sans, Impact;}
+    h1{color: $color-b; font-family: $ff-titulo;}
+    p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
+      span{color: $color-b;}
+    }
+    .aboutme-item{ background: rgba(235, 238, 237, 0.1);
+      p{font-size: 14px; letter-spacing: 1.2;}
+    }
+    .aboutme p{font-size: 12px;}
+    .aboutme-contenido{position: absolute; top:20%; left:0; right:8%; font: 14.5em/1 Open Sans, Impact;}
   }
   .redes{
     i{font-size: 23px; color: $color-e;}
@@ -289,25 +291,25 @@ body {
   #index .index-contenido #svg{margin-left:65px;}
   #index .index-contenido #s-text{text-align:center; margin-left: 15px;}
   #index .index-contenido p{font-size:16px; margin-left: 30px;}
-  #menu{position:fixed; z-index: 1000; bottom:20%;
-    .menu-item{  
-      a{color: $color-b; padding-top: 5%; padding-bottom: 5%; font-size: 16px; font-family: $ff-titulo; transition: all 0.5s;}
+  #menu{position:fixed; bottom:10%; left:0; right:0; z-index: 1000;
+    .menu-item{
+      li{display: block;} 
+      a{color: $color-b; font-size: 20px; font-family: $ff-titulo; transition: all 0.5s;}
       a:hover, a.active{color: $color-c;}
     }
   }
- #skills .skills-contenido{position: absolute; top:2%; left:0; right:8%;}
- #skills .skills-contenido h3{font-size: 14px;}
- #skills .skills-contenido ul li img{max-width: 40%; max-height:50%;}
+  #skills .skills-contenido{position: absolute; top:5%; left:0; right:0; margin-right:8%;}
+  #skills .skills-contenido h3{font-size: 14px; margin-bottom:5%;}
+  #skills .skills-contenido p{font-size: 12px; }
+  #skills .skills-contenido .list-web li{margin-left:25%;}
+  #skills .skills-contenido ul li img{max-width: 40%; max-height:50%; align:text-center; }
   #contact{ 
-  h1{color: $color-b; font-family: $ff-titulo;}
-  p{font-family: $ff-parrafo; color: $color-e; font-size: 20px; 
-    span{color: $color-b;}
+    h1{color: $color-b; font-family: $ff-titulo;}
+    p{font-family: $ff-parrafo; font-size: 12px;}
   }
-  .contact-item{ background: rgba(235, 238, 237, 0.1);
-    p{color:$color-c; font-size: 14px; letter-spacing: 1.2;}
-  }
-  .contact p{font-size: 12px;}
   .contact-contenido{position: absolute; top:20%; left:0; right:8%; font: 14.5em/1 Open Sans, Impact;}
-  }
-  #portfolio .portfolio-contenido{}
+  .contact-item p{font-size:10px;}
+  #portfolio .portfolio-contenido{position: absolute; top:2%; left:0; right:0; margin-right:8%;}
+  #portfolio img{max-width: 40%; max-height:9%; margin-left:30%;}
+  .hovereffect{margin-bottom:2%;}
 }
