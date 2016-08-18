@@ -378,7 +378,7 @@ body {
     font-size: 12px; }
   #aboutme .aboutme-contenido {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 0;
     right: 8%;
     font: 14.5em/1 Open Sans, Impact; }
@@ -441,7 +441,7 @@ body {
     font-size: 12px; }
   .contact-contenido {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 0;
     right: 8%;
     font: 14.5em/1 Open Sans, Impact; }
